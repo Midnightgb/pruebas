@@ -22,5 +22,6 @@ jobs:
         run: |
           git fetch origin master
           git checkout master
-          git merge --no-ff ${{ github.ref }}
+          git merge --no-ff --allow-unrelated-histories refs/heads/prueba1
           git push
+
